@@ -90,7 +90,8 @@ testing_EXTERNAL_OBJECTS =
 
 testing: CMakeFiles/testing.dir/test.cpp.o
 testing: CMakeFiles/testing.dir/build.make
-testing: libhybrid_PS.a
+testing: libparticle.a
+testing: libswarm.a
 testing: CMakeFiles/testing.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Neythen/Desktop/masters_project/cpp_optimiser/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable testing"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testing.dir/link.txt --verbose=$(VERBOSE)

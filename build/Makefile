@@ -124,44 +124,84 @@ testing/fast:
 .PHONY : testing/fast
 
 #=============================================================================
-# Target rules for targets named hybrid_PS
+# Target rules for targets named swarm
 
 # Build rule for target.
-hybrid_PS: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hybrid_PS
-.PHONY : hybrid_PS
+swarm: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 swarm
+.PHONY : swarm
 
 # fast build rule for target.
-hybrid_PS/fast:
-	$(MAKE) -f CMakeFiles/hybrid_PS.dir/build.make CMakeFiles/hybrid_PS.dir/build
-.PHONY : hybrid_PS/fast
+swarm/fast:
+	$(MAKE) -f CMakeFiles/swarm.dir/build.make CMakeFiles/swarm.dir/build
+.PHONY : swarm/fast
 
-hybrid_PS.o: hybrid_PS.cpp.o
+#=============================================================================
+# Target rules for targets named particle
 
-.PHONY : hybrid_PS.o
+# Build rule for target.
+particle: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 particle
+.PHONY : particle
+
+# fast build rule for target.
+particle/fast:
+	$(MAKE) -f CMakeFiles/particle.dir/build.make CMakeFiles/particle.dir/build
+.PHONY : particle/fast
+
+particle.o: particle.cpp.o
+
+.PHONY : particle.o
 
 # target to build an object file
-hybrid_PS.cpp.o:
-	$(MAKE) -f CMakeFiles/hybrid_PS.dir/build.make CMakeFiles/hybrid_PS.dir/hybrid_PS.cpp.o
-.PHONY : hybrid_PS.cpp.o
+particle.cpp.o:
+	$(MAKE) -f CMakeFiles/particle.dir/build.make CMakeFiles/particle.dir/particle.cpp.o
+.PHONY : particle.cpp.o
 
-hybrid_PS.i: hybrid_PS.cpp.i
+particle.i: particle.cpp.i
 
-.PHONY : hybrid_PS.i
+.PHONY : particle.i
 
 # target to preprocess a source file
-hybrid_PS.cpp.i:
-	$(MAKE) -f CMakeFiles/hybrid_PS.dir/build.make CMakeFiles/hybrid_PS.dir/hybrid_PS.cpp.i
-.PHONY : hybrid_PS.cpp.i
+particle.cpp.i:
+	$(MAKE) -f CMakeFiles/particle.dir/build.make CMakeFiles/particle.dir/particle.cpp.i
+.PHONY : particle.cpp.i
 
-hybrid_PS.s: hybrid_PS.cpp.s
+particle.s: particle.cpp.s
 
-.PHONY : hybrid_PS.s
+.PHONY : particle.s
 
 # target to generate assembly for a file
-hybrid_PS.cpp.s:
-	$(MAKE) -f CMakeFiles/hybrid_PS.dir/build.make CMakeFiles/hybrid_PS.dir/hybrid_PS.cpp.s
-.PHONY : hybrid_PS.cpp.s
+particle.cpp.s:
+	$(MAKE) -f CMakeFiles/particle.dir/build.make CMakeFiles/particle.dir/particle.cpp.s
+.PHONY : particle.cpp.s
+
+swarm.o: swarm.cpp.o
+
+.PHONY : swarm.o
+
+# target to build an object file
+swarm.cpp.o:
+	$(MAKE) -f CMakeFiles/swarm.dir/build.make CMakeFiles/swarm.dir/swarm.cpp.o
+.PHONY : swarm.cpp.o
+
+swarm.i: swarm.cpp.i
+
+.PHONY : swarm.i
+
+# target to preprocess a source file
+swarm.cpp.i:
+	$(MAKE) -f CMakeFiles/swarm.dir/build.make CMakeFiles/swarm.dir/swarm.cpp.i
+.PHONY : swarm.cpp.i
+
+swarm.s: swarm.cpp.s
+
+.PHONY : swarm.s
+
+# target to generate assembly for a file
+swarm.cpp.s:
+	$(MAKE) -f CMakeFiles/swarm.dir/build.make CMakeFiles/swarm.dir/swarm.cpp.s
+.PHONY : swarm.cpp.s
 
 test.o: test.cpp.o
 
@@ -199,10 +239,14 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... testing"
-	@echo "... hybrid_PS"
-	@echo "... hybrid_PS.o"
-	@echo "... hybrid_PS.i"
-	@echo "... hybrid_PS.s"
+	@echo "... swarm"
+	@echo "... particle"
+	@echo "... particle.o"
+	@echo "... particle.i"
+	@echo "... particle.s"
+	@echo "... swarm.o"
+	@echo "... swarm.i"
+	@echo "... swarm.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"

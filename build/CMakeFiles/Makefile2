@@ -63,10 +63,11 @@ CMAKE_BINARY_DIR = /Users/Neythen/Desktop/masters_project/cpp_optimiser/build
 # Target rules for target CMakeFiles/testing.dir
 
 # All Build rule for target.
-CMakeFiles/testing.dir/all: CMakeFiles/hybrid_PS.dir/all
+CMakeFiles/testing.dir/all: CMakeFiles/particle.dir/all
+CMakeFiles/testing.dir/all: CMakeFiles/swarm.dir/all
 	$(MAKE) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/depend
 	$(MAKE) -f CMakeFiles/testing.dir/build.make CMakeFiles/testing.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Neythen/Desktop/masters_project/cpp_optimiser/build/CMakeFiles --progress-num=3,4 "Built target testing"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Neythen/Desktop/masters_project/cpp_optimiser/build/CMakeFiles --progress-num=5,6 "Built target testing"
 .PHONY : CMakeFiles/testing.dir/all
 
 # Include target in all.
@@ -76,7 +77,7 @@ all: CMakeFiles/testing.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/testing.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Neythen/Desktop/masters_project/cpp_optimiser/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Neythen/Desktop/masters_project/cpp_optimiser/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/testing.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Neythen/Desktop/masters_project/cpp_optimiser/build/CMakeFiles 0
 .PHONY : CMakeFiles/testing.dir/rule
@@ -97,39 +98,76 @@ clean: CMakeFiles/testing.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/hybrid_PS.dir
+# Target rules for target CMakeFiles/swarm.dir
 
 # All Build rule for target.
-CMakeFiles/hybrid_PS.dir/all:
-	$(MAKE) -f CMakeFiles/hybrid_PS.dir/build.make CMakeFiles/hybrid_PS.dir/depend
-	$(MAKE) -f CMakeFiles/hybrid_PS.dir/build.make CMakeFiles/hybrid_PS.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Neythen/Desktop/masters_project/cpp_optimiser/build/CMakeFiles --progress-num=1,2 "Built target hybrid_PS"
-.PHONY : CMakeFiles/hybrid_PS.dir/all
+CMakeFiles/swarm.dir/all:
+	$(MAKE) -f CMakeFiles/swarm.dir/build.make CMakeFiles/swarm.dir/depend
+	$(MAKE) -f CMakeFiles/swarm.dir/build.make CMakeFiles/swarm.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Neythen/Desktop/masters_project/cpp_optimiser/build/CMakeFiles --progress-num=3,4 "Built target swarm"
+.PHONY : CMakeFiles/swarm.dir/all
 
 # Include target in all.
-all: CMakeFiles/hybrid_PS.dir/all
+all: CMakeFiles/swarm.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/hybrid_PS.dir/rule: cmake_check_build_system
+CMakeFiles/swarm.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Neythen/Desktop/masters_project/cpp_optimiser/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/hybrid_PS.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/swarm.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Neythen/Desktop/masters_project/cpp_optimiser/build/CMakeFiles 0
-.PHONY : CMakeFiles/hybrid_PS.dir/rule
+.PHONY : CMakeFiles/swarm.dir/rule
 
 # Convenience name for target.
-hybrid_PS: CMakeFiles/hybrid_PS.dir/rule
+swarm: CMakeFiles/swarm.dir/rule
 
-.PHONY : hybrid_PS
-
-# clean rule for target.
-CMakeFiles/hybrid_PS.dir/clean:
-	$(MAKE) -f CMakeFiles/hybrid_PS.dir/build.make CMakeFiles/hybrid_PS.dir/clean
-.PHONY : CMakeFiles/hybrid_PS.dir/clean
+.PHONY : swarm
 
 # clean rule for target.
-clean: CMakeFiles/hybrid_PS.dir/clean
+CMakeFiles/swarm.dir/clean:
+	$(MAKE) -f CMakeFiles/swarm.dir/build.make CMakeFiles/swarm.dir/clean
+.PHONY : CMakeFiles/swarm.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/swarm.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/particle.dir
+
+# All Build rule for target.
+CMakeFiles/particle.dir/all:
+	$(MAKE) -f CMakeFiles/particle.dir/build.make CMakeFiles/particle.dir/depend
+	$(MAKE) -f CMakeFiles/particle.dir/build.make CMakeFiles/particle.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Neythen/Desktop/masters_project/cpp_optimiser/build/CMakeFiles --progress-num=1,2 "Built target particle"
+.PHONY : CMakeFiles/particle.dir/all
+
+# Include target in all.
+all: CMakeFiles/particle.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/particle.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Neythen/Desktop/masters_project/cpp_optimiser/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/particle.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Neythen/Desktop/masters_project/cpp_optimiser/build/CMakeFiles 0
+.PHONY : CMakeFiles/particle.dir/rule
+
+# Convenience name for target.
+particle: CMakeFiles/particle.dir/rule
+
+.PHONY : particle
+
+# clean rule for target.
+CMakeFiles/particle.dir/clean:
+	$(MAKE) -f CMakeFiles/particle.dir/build.make CMakeFiles/particle.dir/clean
+.PHONY : CMakeFiles/particle.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/particle.dir/clean
 
 .PHONY : clean
 

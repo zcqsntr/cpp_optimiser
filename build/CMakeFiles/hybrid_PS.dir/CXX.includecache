@@ -6,21 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/Users/Neythen/Desktop/masters_project/cpp_optimiser/hybrid_PS.cpp
-hybrid_PS.h
-/Users/Neythen/Desktop/masters_project/cpp_optimiser/hybrid_PS.h
-iostream
--
-cmath
--
-functional
--
-vector
--
-
-/Users/Neythen/Desktop/masters_project/cpp_optimiser/hybrid_PS.h
-vector
--
-functional
--
-

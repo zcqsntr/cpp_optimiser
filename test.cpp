@@ -27,6 +27,8 @@ double squared_loss(std::vector<double> param_vec, std::vector<double> current_S
 
 
 int main() {
+
+  // test particle
   std::vector<double> position(2,1.5);
 
   std::vector<double> cs{2,2};
@@ -53,6 +55,13 @@ int main() {
 
   std::cout << "\n" << p.position[0] << " ";
   std::cout << p.position[1] << "\n";
+
+  std::cout << "-------------------------------------------------------------"
+
+  // test swarm
+  vector<double> ode_params = {0.2,0.2,0.3};
+  swarm = Swarm(domain, 5, 2, cs, ode_params);
+
 
 
 
